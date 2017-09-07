@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8' />
+</head>
+
+<body>
+ <div id='logoDiv' style='position:absolute;left:0px;top:0px;width:100px;bottom:0px;background-color:grey;overflow:hidden'></div>
+ <div id='messDiv' style='position:absolute;left:110px;top:10px;right:10px;bottom:10px;overflow-y:hidden;overflow-x:auto;'></div>
+</body>
+
+<script src="http://cdn.jsdelivr.net/npm/pouchdb@6.3.4/dist/pouchdb.min.js"></script>
+
+<script>
+var localDb  = new PouchDB('my_db');
+var remoteDb = new PouchDB('http://nile16.nu:5984/messages/');
+
+
+function showMessages() {
+	let html = "";
+	localDb.allDocs({include_docs: true, descending: true}, function(err, doc) {
+		for (i=0;i<doc.rows.length;i++){
+			html += '<b>' + doc.rows[i].doc.title + '</b>';
+			html += ' Id:' + doc.rows[i].doc._id;
+			html += ' Posted:' + doc.rows[i].doc.time;
+			html += ' Prio: ' + doc.rows[i].doc.priority + '<br>';
+			html += decodeURI(doc.rows[i].doc.message);
+			html += ' \<<i>' + doc.rows[i].doc.author + '</i>\><br><br>';
+		}
+		messDiv.innerHTML = html;
+	});
+}
+
+function sync() {
+  localDb.replicate.from( remoteDb,{ live: true, retry: true }).on('change',showMessages);
+}
+
+sync();
+
+showMessages();
+
+</script>
+
+</html>
