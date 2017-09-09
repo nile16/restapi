@@ -20,5 +20,10 @@
   "bugs": {
     "url": "https://github.com/nile16/restapi/issues"
   },
-  "homepage": "https://github.com/nile16/restapi#readme"
+  "homepage": "https://github.com/nile16/restapi#readme",
+  "dependencies": {
+    "http": "^0.0.0",
+    "request": "^2.81.0"
+  },
+  "devDependencies": {}
 }
