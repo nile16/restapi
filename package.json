@@ -1,0 +1,24 @@
+{
+  "name": "restapi",
+  "version": "1.0.0",
+  "description": "A RESTful API for handling of messages stored by CouchDB. Includes a PouchDB driven web page that presents messages.",
+  "main": "rest.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nile16/restapi.git"
+  },
+  "keywords": [
+    "CouchDB",
+    "RESTful",
+    "PouchDB"
+  ],
+  "author": "nile16",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nile16/restapi/issues"
+  },
+  "homepage": "https://github.com/nile16/restapi#readme"
+}
