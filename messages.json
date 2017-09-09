@@ -1,0 +1,22 @@
+{"docs":[
+{"_id":"01", "time":"2017-9-7 10:03:43", "title":"Tillfälle!", "priority":"3", "message":"Extrapris på Pizza på Kebabhouse",        "author":"Kebabhouse"},
+{"_id":"02", "time":"2017-9-7 10:06:13", "title":"Tillfälle!", "priority":"3", "message":"Extrapris på allt på REX",                "author":"REX"},
+{"_id":"03", "time":"2017-9-7 12:49:02", "title":"Kyrkovalet", "priority":"3", "message":"Glöm inte kyrkovalet den 17:e",           "author":"Svenska Kyrkan"},
+{"_id":"04", "time":"2017-9-7 13:09:50", "title":"Info",       "priority":"1", "message":"Redovising på Måndag av uppgift 1",       "author":"Vickepetter"},
+{"_id":"05", "time":"2017-9-7 14:38:42", "title":"Fest!",      "priority":"2", "message":"Imorgon är det fest i localhost",         "author":"Knut"},
+{"_id":"06", "time":"2017-9-7 20:58:48", "title":"Möte",       "priority":"1", "message":"Vi träffas i Rio Grande kl 14:00",        "author":"Kurt Olsson"},
+{"_id":"07", "time":"2017-9-7 21:03:43", "title":"Tillfälle!", "priority":"3", "message":"Extrapris på Gyrosrulle på Kebabhouse",   "author":"Kebabhouse"},
+{"_id":"08", "time":"2017-9-7 21:06:13", "title":"Tillfälle!", "priority":"3", "message":"Extrapris på vatten på REX",              "author":"REX"},
+{"_id":"09", "time":"2017-9-7 22:49:02", "title":"Olycka!",    "priority":"2", "message":"Trafikolycka på riksväg 27",              "author":"Räddningstjänsten"},
+{"_id":"10", "time":"2017-9-8 10:09:50", "title":"Olycka!",    "priority":"1", "message":"Trafikolycka på E22",                     "author":"Räddningstjänsten"},
+{"_id":"11", "time":"2017-9-8 10:38:42", "title":"Fest!",      "priority":"2", "message":"Imorgon är det fest på torget",           "author":"Knut"},
+{"_id":"12", "time":"2017-9-8 10:58:48", "title":"Möte",       "priority":"1", "message":"Vi träffas i Rio Grande kl 14:00",        "author":"Kurt Olsson"},
+{"_id":"13", "time":"2017-9-8 12:03:43", "title":"Tillfälle!", "priority":"3", "message":"Extrapris på kebabrulle på Kebabhouse",   "author":"Kebabhouse"},
+{"_id":"14", "time":"2017-9-8 12:06:13", "title":"Stängt!",    "priority":"3", "message":"Idag har vi stängt hela dagen",           "author":"REX"},
+{"_id":"15", "time":"2017-9-8 12:49:02", "title":"Kyrkovalet", "priority":"3", "message":"Röstkort utskickade",                     "author":"Svenska Kyrkan"},
+{"_id":"16", "time":"2017-9-8 13:09:50", "title":"Info",       "priority":"1", "message":"Vägarbete på E22",                        "author":"Vägverket"},
+{"_id":"17", "time":"2017-9-8 14:38:42", "title":"Fest!",      "priority":"2", "message":"Imorgon är det dans i Rävamåla",          "author":"Partyprissen"},
+{"_id":"18", "time":"2017-9-8 20:58:48", "title":"Möte",       "priority":"1", "message":"Vi träffas i Rio Grande kl 14:00",        "author":"Kurt Olsson"},
+{"_id":"19", "time":"2017-9-8 21:03:43", "title":"Tillfälle!", "priority":"3", "message":"Extrapris på Pizza på Kebabhouse",        "author":"Kebabhouse"},
+{"_id":"20", "time":"2017-9-8 21:06:13", "title":"Tillfälle!", "priority":"3", "message":"Extrapris på allt på REX",                "author":"REX"}
+]}
