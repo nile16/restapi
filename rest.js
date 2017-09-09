@@ -18,7 +18,7 @@ const server = http.createServer((req, res) => {
 
 		case 'POST':
 			var d = new Date();
-			request({ method: 'PUT', uri:url+urlPara[1], json: { time:d.toLocaleString(), title: urlPara[2], priority: urlPara[3], message: urlPara[4], author: urlPara[5] }}, function (error, response, body) {
+			request({ method: 'PUT', uri:url+urlPara[1], json: { time:d.toLocaleString(), title: decodeURI(urlPara[2]), priority: decodeURI(urlPara[3]), message: decodeURI(urlPara[4]), author: decodeURI(urlPara[5]) }}, function (error, response, body) {
 				res.end(JSON.stringify(body));
 			});
 			break;
@@ -32,11 +32,11 @@ const server = http.createServer((req, res) => {
 			
 		case 'PUT':
 			request({ method: 'GET', uri:url+urlPara[1]}, function (error, response, body) {
-				let change = JSON.parse(body);
-				if (!urlPara[2]=="") change.title    = urlPara[2];
-				if (!urlPara[3]=="") change.priority = urlPara[3];
-				if (!urlPara[4]=="") change.message  = urlPara[4];
-				if (!urlPara[5]=="") change.author   = urlPara[5];
+				var change = JSON.parse(body);
+				if (!urlPara[2]=="") change.title    = decodeURI(urlPara[2]);
+				if (!urlPara[3]=="") change.priority = decodeURI(urlPara[3]);
+				if (!urlPara[4]=="") change.message  = decodeURI(urlPara[4]);
+				if (!urlPara[5]=="") change.author   = decodeURI(urlPara[5]);
 				request({ method: 'PUT', uri:url+urlPara[1], json: change }	, function (error, response, body) {
 					res.end(JSON.stringify(body));
 				});
