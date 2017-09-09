@@ -1,10 +1,13 @@
 # restapi
-Uppgift 1 digital infrastruktur
+Uppgift 1 digital infrastruktur.
+
+Ett RESTful API som hanterar meddelanden lagrade i CouchDB. API:et realiseras av en node.js server. Meddelandena visas med en [webbsida](http://nile16.nu/mess) som använder PouchDB. 
 
 ## API beskrivning.
 
-### Läs ett meddelande. Om {id} utelämnas skickas alla meddelanden:
+### Läs ett meddelande
 GET    http://nile16.nu:1250/{id}
+Om {id} utelämnas skickas alla meddelanden:
 Exempel: GET http://nile16.nu:1250/12
 
 ### Lägg till ett meddelande
