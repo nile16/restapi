@@ -24,8 +24,8 @@ const server = http.createServer((req, res) => {
 			break;
 		
 		case 'GET':
-			if (urlPara[1]=="") urlPara[1]='_all_docs?include_do‌​cs=true';
-			request({ method: 'GET', uri:url+urlPara[1]}, function (error, response, body) {
+			if (urlPara[1]=="") urlPara[1]='_all_docs?include_docs=true';
+			request({ method: 'GET', uri:encodeURI(url+urlPara[1])}, function (error, response, body) {
 				res.end(body);
 			});
 			break;
